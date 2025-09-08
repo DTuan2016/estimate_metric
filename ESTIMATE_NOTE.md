@@ -37,7 +37,7 @@
 ```
 - Sau khi xong, bật tcpdump ở khung bên phải phía dưới với lệnh sau:
 ```bash
-    sudo tcpdump -i enp9s0f1
+    sudo tcpdump -i eno3
 ```
 - Sau khi xong, phát tập benign với khung bên phải phía trên (Làm việc trên lanforge và ở thư mục Desktop, nếu chưa trong thư mục Desktop --> cd Desktop)
 ```bash
@@ -70,4 +70,4 @@ Một lưu ý ở đây là tên file output cpu_usage_lof_10k.csv chỉ là ví
 Một lưu ý ở đây là tên file output latency_lof_10k.csv chỉ là ví dụ, phải đặt tên như sau: latency_<loại thuật toán đang đo>_<packet/s đang phát>.csv, thời gian đo bắt buộc là 60.
 
 ## 6. Kịch bản đo:
-- Đối với việc đo cpu_usage, latency thì đã cố định trong code, chỉ cần chạy lệnh thôi là được. Thay đổi số pps từ 10k đến 100k, đến mức xdp bị đơ (Mỗi lần tăng 1k).
+- Đối với việc đo cpu_usage, latency thì đã cố định trong code, chỉ cần chạy lệnh thôi là được. Thay đổi số pps từ 10k đến khi đơ XDP, đến mức xdp bị đơ (Mỗi lần tăng 10k).
