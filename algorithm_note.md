@@ -21,8 +21,6 @@
   Dùng để dự đoán giá trị liên tục, ví dụ: dự đoán giá nhà.  
   Thay vì gán nhãn, nó đưa ra giá trị số dựa trên đặc trưng đầu vào.  
 
----
-
 ## 2. Cách hoạt động của Decision Tree
 
 1. **Bắt đầu từ nút gốc:** Cây bắt đầu với một câu hỏi chính tại nút gốc, được rút ra từ các đặc trưng trong tập dữ liệu.  
@@ -32,8 +30,6 @@
    - Nếu *No* → đi theo nhánh khác.  
 4. **Tiếp tục phân chia:** Quá trình phân nhánh tiếp tục với các câu hỏi tiếp theo, giúp thu hẹp dữ liệu từng bước.  
 5. **Đến nút lá:** Quá trình kết thúc khi không còn câu hỏi hữu ích nào để tách, lúc đó ta đến nút lá – nơi quyết định hoặc dự đoán cuối cùng được đưa ra.  
-
----
 
 ## 3. Tiêu chí phân chia trong Decision Tree
 
@@ -55,8 +51,6 @@ Tiêu chí phân chia tìm ra đặc trưng tốt nhất để tách dữ liệu
     ![Công thức Entropy](img/formula_entropy.png)
 - Cả 2 tiêu chí trên đều tuân theo nguyên tắc: tìm cách giảm thiểu sự không thuần khiết sau khi phân tách.
 
----
-
 ## 4. Quá trình phân tách:
 - Quá trình lặp đi lặp lại tại mỗi nút của cây:
 - **Tính toán Gini/Entropy cho nút hiện tại:** Đầu tiên, tính toán giá trị Gini Impurity hoặc Entropy cho nút cha trước khi phân tách.
@@ -73,7 +67,6 @@ Tiêu chí phân chia tìm ra đặc trưng tốt nhất để tách dữ liệu
 - Tỉa cây rất hữu ích khi một cây quyết định quá sâu và bắt đầu nắm bắt cả những nhiễu trong dữ liệu.
 
 ---
-
 # Random Forest
 ## 1. Giới thiệu chung:
 - Là thuật toán học máy sử dụng nhiều cây quyết định để đưa ra dự đoán tốt hơn. Mỗi cây xem xét các phần ngẫu nhiên khác nhau của dữ liệu và kết quả của chúng được kết hợp bằng cách bỏ phiếu cho phân loại (Classification) hoặc tính trung bình cho hồi quy (Regression) --> Tạo nên một kỹ thuật học tổng hợp.

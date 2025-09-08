@@ -64,7 +64,7 @@ Một lưu ý ở đây là tên file output cpu_usage_lof_10k.csv chỉ là ví
 - Mở tiếp một terminal khác ở máy, ssh vào server3, sau đó thực hiện các lệnh sau (Nếu hỏi mật khẩu thì mật khẩu là 1):
 ```bash
     ssh lanforge@192.168.101.238
-    ssh gnb@192.168.50.3
+    ssh dtuan@192.168.50.3
     ./latency_test.sh enp1s0 192.168.50.4 60 latency_lof_10k.csv
 ```
 Một lưu ý ở đây là tên file output latency_lof_10k.csv chỉ là ví dụ, phải đặt tên như sau: latency_<loại thuật toán đang đo>_<packet/s đang phát>.csv, thời gian đo bắt buộc là 60.
