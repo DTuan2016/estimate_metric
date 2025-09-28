@@ -70,3 +70,5 @@ Sau khi chạy lệnh trên, nó sẽ ra id như sau:
 ```bash
    ./scripts_tcpreplay.sh enp1s0f1 pcap/data_portmap.pcap 125 
 ```
+
+## Đo mỗi tham số 5 lần
