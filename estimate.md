@@ -68,7 +68,7 @@ sudo bpftool prog profile id <như số 153 ở trên> cycles instructions llc_m
 
 - Tiếp theo đến góc phải trên, chạy lệnh sau:
 ```bash
-./scripts_tcpreplay.sh enp1s0f1 pcap/data_portmap.pcap <số pps> 125 
+./scripts_tcpreplay.sh enp1s0f1 pcap/data_portmap.pcap <số pps> 125 <Tên branch>_<Tham số điều chỉnh>.log
 ```
 Số pps thay đổi từ 10000 đến 100000 mỗi lần tăng 10000
 ## Đo mỗi tham số 5 lần
